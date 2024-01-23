@@ -11,23 +11,84 @@
     <!-- Tailwind -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <!--manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font style -->
+    <style>
+        .manrope-family {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-
+    <header class="container mx-auto">
+        <!-- header picture -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
-
+    <!-- main section -->
+    <main class="container mx-auto">
+        <!-- progress section -->
+        <section>
+            <div class="mt-24">
+                <h3 class="text-4xl font-extrabold text-center">Professional Hockeys Club</h3>
+                <p class="text-[16px] text-center font-medium text-[#13131899]">Dit amet consectetur. Condimentum
+                    dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in
+                    sit nullam proin.
+                </p>
+            </div>
+            <div class="flex gap-8 ml-20 mt-20">
+                <div>
+                    <div class="radial-progress font-extrabold text-3xl text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    <h4 class="text-xl font-semibold text-[#131318]">Prayer Facility</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress tex" style="--value:95;" role="progressbar">95%</div>
+                    <h4 class="text-xl font-semibold text-[#131318]">Experienced Coach</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+                    <h4 class="text-xl font-semibold text-[#131318]">Senior Player</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+                    <h4 class="text-xl font-semibold text-[#131318]">Training Ground</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
